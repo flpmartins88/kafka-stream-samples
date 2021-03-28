@@ -1,0 +1,26 @@
+{
+    "name": "OrderCompletedEvent",
+    "type": "record",
+    "namespace": "io.flpmartins88.streams.events",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "customer",
+            "type": "CustomerEvent"
+        },
+        {
+            "name": "items",
+            "type": {
+                "type": "array",
+                "items": "OrderItemEvent"
+            }
+        },
+        {
+            "name": "paymentStatus",
+            "type": "PaymentStatus"
+        }
+    ]
+}

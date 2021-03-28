@@ -1,0 +1,11 @@
+{
+    "name": "PaymentEvent",
+    "type": "record",
+    "namespace": "io.flpmartins88.streams.events",
+    "fields": [
+        {"name": "id", "type": "string"},
+        {"name": "source", "type": ["null", "PaymentSource"]},
+        {"name": "result", "type": "PaymentStatus"},
+        {"name": "amount", "type": "long"}
+    ]
+}

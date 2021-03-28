@@ -1,0 +1,19 @@
+{
+    "name": "OrderItemEvent",
+    "type": "record",
+    "namespace": "io.flpmartins88.streams.events",
+    "fields": [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "quantity",
+            "type": "long"
+        },
+        {
+            "name": "unit_amount",
+            "type": "long"
+        }
+    ]
+}

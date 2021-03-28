@@ -1,0 +1,9 @@
+{
+    "name": "PaymentSource",
+    "type": "record",
+    "namespace": "io.flpmartins88.streams.events",
+    "fields": [
+        {"name": "name", "type": "string"},
+        {"name": "id", "type": "string"}
+    ]
+}

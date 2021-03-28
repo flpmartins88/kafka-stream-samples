@@ -1,0 +1,6 @@
+{
+    "name": "PaymentStatus",
+    "type": "enum",
+    "namespace": "io.flpmartins88.streams.events",
+    "symbols": ["PAID", "DECLINED"]
+}

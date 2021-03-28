@@ -1,0 +1,15 @@
+{
+    "name": "CustomerEvent",
+    "type": "record",
+    "namespace": "io.flpmartins88.streams.events",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

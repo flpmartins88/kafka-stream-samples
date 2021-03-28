@@ -1,0 +1,22 @@
+{
+    "name": "OrderEvent",
+    "type": "record",
+    "namespace": "io.flpmartins88.streams.events",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "customer",
+            "type": "string"
+        },
+        {
+            "name": "items",
+            "type": {
+                "type": "array",
+                "items": "OrderItemEvent"
+            }
+        }
+    ]
+}

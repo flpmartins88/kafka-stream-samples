@@ -1,0 +1,20 @@
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    properties:
+      schema.registry.url: http://localhost:8081
+#    listener:
+#      ack-mode: manual
+    consumer:
+      group-id: spring-consumer-test
+      key-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+#      enable-auto-commit: false
+      properties:
+        specific.avro.reader: true
+    streams:
+      bootstrap-servers: localhost:9092
+      application-id: spring-stream
+      properties:
+        schema.registry.url: http://localhost:8081
